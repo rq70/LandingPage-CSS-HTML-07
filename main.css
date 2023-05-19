@@ -1,0 +1,73 @@
+*{    margin: 0;    padding: 0;    transition: .2s ease-in-out;}
+@font-face {    font-family:Tanha ;    src: url(fonts/eot/Tanha-FD.eot),
+    url(fonts/ttf/Tanha-FD.eot),    url(fonts/woff/Tanha-FD.woff),
+    url(fonts/woff2/Tanha-FD.woff2);
+}
+@font-face {    font-family:Vazir ;    src: url(fonts/eot/Vazir-Bold.eot),
+    url(fonts/ttf/Vazir-Bold.ttf),    url(fonts/woff/Vazir-Bold.woff),
+    url(fonts/woff2/Vazir-Bold.woff2);
+}
+:root{    --font-primatry:Tanha;    --font-secondary:Vazir;    --color-primary:#dfe1e0;
+    --color-primary-dark:#08001b;    --color-black:#000;    --color-white:#fff;
+}
+body{    width: 100%;    font-family: var(--font-secondary);
+     background-color: var(--color-primary); color: black;
+    }
+header{ height: 70px; width: 100%;   display: flex;  justify-content: space-between;}
+header nav{width: 100%;    display: flex; flex-direction: row-reverse;    align-items: center;
+    justify-content: space-between;     z-index: 100;}
+header nav .logo{    width: 100px;overflow: hidden; margin-left: 20px;}
+header nav .logo img{    width: 100%;}
+header nav ul{    display: flex;    width: 80%;    list-style: none;}
+header nav ul li{    margin-right: 40px;    font-family: var(--font-primatry);
+    padding: 5px 10px;    position: relative;   color: rgb(58, 58, 58);
+}
+header nav ul li.select{    color: black;    position: relative;}
+header nav button{    background-color: transparent;    color: black;    border: none;
+    margin-left: 30px;
+}
+main{    width: 100%;}
+.LandingPage{width: 100%;    height: 100vh;    display: flex;    top: 0;    z-index: -1;
+    justify-content: space-between;    align-items: center;    margin-top: -73px;
+    background-color: #dfe1e0;
+}
+.LandingPage .pic{    width: 50%;    height: 100vh;    overflow: hidden;
+    position: relative;
+}
+.LandingPage .pic img{    height: 100%;    position: absolute;    right: -134px;}
+.LandingPage .social-items{    width: 50px;    height: 100%;    display: flex;
+    flex-direction: column;    justify-content: space-between;
+}
+.LandingPage .social-items .social{    display: flex;    align-self: flex-end;
+    height: 40%;
+}
+.LandingPage .social-items .items{    display: flex;    align-items: center;    height: 60%;
+    overflow: hidden;
+}
+.LandingPage .social-items .items ul{    display: flex;    justify-content: space-evenly;
+    align-items: center;    list-style-type: none;    width: 100%;
+    transform: rotate(-90deg);    margin-top: 70px;    font-size: 10pt;
+}
+.LandingPage .social-items .items ul li{    min-width: 110px;}
+.LandingPage .social-items .social{    display: flex;    height: 30%;
+    justify-content: center;    align-self: auto;    background-color: white;
+}
+.LandingPage .social-items .social ul{    list-style-type: none;    display: flex;
+    flex-direction: column;    justify-content: space-evenly;    padding: 20px 5px;
+    align-self: center;    height: 100%;
+}
+.LandingPage .detail{    padding: 0 40px;    display: flex;    flex-direction: column;
+    align-items: center;
+}
+.LandingPage .detail h1{    font-size: 48pt;    margin-top: 20px;}
+.LandingPage .detail p{    width: 50%;    margin-top: 10px;    margin-bottom: 20px;}
+.LandingPage .detail .rbcontainer{    display: flex;    flex-direction: column;
+    width: 50%;
+}
+.LandingPage .detail .rbcontainer span{    font-size: 10pt;    color:rgb(29, 29, 29);}
+.LandingPage .detail .rbcontainer .radio-container{    display: flex;    width: 50%;
+    justify-content: space-around;    font-size: 8pt;    margin-top: 10px;
+}
+.LandingPage .detail button{    width: 50%;    padding: 20px 5px;    color: white;
+    background-color: #000;    border: 1px solid white;    margin-top: 20px;
+}
